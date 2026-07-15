@@ -5,25 +5,30 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate-json:
     runs-on: ubuntu-latest
     steps:
+      # Setup environment
       - name: Check out repository
         uses: actions/checkout@v4
       - run: |
-          apt-get update && apt-get install -y yq
-      - run: |
-          wget https://enterprise.github.com/releases.rss -O releases.rss
-      - run: mkdir -p ${{ gitea.workspace }}/json
-      - run: |
-          yq -o=json eval releases.rss > ${{ gitea.workspace }}/json/releases.json
-      #  Change directory to repository
+          apt-get update && apt-get install -y xq yq
       - run: |
           cd ${{ gitea.workspace }}
-      - run : |
+      - run: mkdir -p json
+
+      # Fetch the RSS feed and convert it to JSON
+      - run: |
+          curl -s https://enterprise.github.com/releases.rss | xq '.' >> json/releases.json
+      # Add the new file to the repository and commit it
+      - name: Commit and push changes
+        run: |
           git config --global user.name "gitea-actions[bot]"
-          git config --global user.email "gitea-actions[bot]@users.noreply.github.com"
+          git config --global user.email "gitea-actions[bot]@users.noreply.gitea.jrdn.dev"
           git add json/releases.json
           git commit -m "Update releases.json"
           git push origin master
