@@ -16,7 +16,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
       - run: |
-          apt-get update && apt-get install -y xq yq
+          curl -sSL https://bit.ly/install-xq | sudo bash
       - run: |
           cd ${{ gitea.workspace }}
       - run: mkdir -p json
