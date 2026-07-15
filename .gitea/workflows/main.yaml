@@ -21,9 +21,11 @@ jobs:
           cd ${{ gitea.workspace }}
       - run: mkdir -p json
 
-      # Fetch the RSS feed and convert it to JSON
+      # Fetch the RSS feed, strip the first 10 items, and convert to JSON
       - run: |
-          curl -s https://enterprise.github.com/releases.rss | xq -j >> json/releases.json
+          curl -s https://enterprise.github.com/releases.rss \
+          | xq -j | jq '.rss.channel.item[:10]' >> json/releases.json
+
       # Add the new file to the repository and commit it
       - name: Commit and push changes
         run: |
