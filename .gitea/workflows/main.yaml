@@ -23,7 +23,7 @@ jobs:
 
       # Fetch the RSS feed and convert it to JSON
       - run: |
-          curl -s https://enterprise.github.com/releases.rss | xq '.' >> json/releases.json
+          curl -s https://enterprise.github.com/releases.rss | xq -j >> json/releases.json
       # Add the new file to the repository and commit it
       - name: Commit and push changes
         run: |
