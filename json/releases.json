@@ -2,6 +2,56 @@
   {
     "description": {},
     "guid": {
+      "#text": "https://enterprise.github.com/releases/3.21.3",
+      "@isPermaLink": "true"
+    },
+    "link": "https://enterprise.github.com/releases/3.21.3",
+    "pubDate": "Thu, 16 Jul 2026 16:03:21 +0000",
+    "title": "3.21.3"
+  },
+  {
+    "description": {},
+    "guid": {
+      "#text": "https://enterprise.github.com/releases/3.20.5",
+      "@isPermaLink": "true"
+    },
+    "link": "https://enterprise.github.com/releases/3.20.5",
+    "pubDate": "Thu, 16 Jul 2026 16:03:20 +0000",
+    "title": "3.20.5"
+  },
+  {
+    "description": {},
+    "guid": {
+      "#text": "https://enterprise.github.com/releases/3.19.9",
+      "@isPermaLink": "true"
+    },
+    "link": "https://enterprise.github.com/releases/3.19.9",
+    "pubDate": "Thu, 16 Jul 2026 16:03:19 +0000",
+    "title": "3.19.9"
+  },
+  {
+    "description": {},
+    "guid": {
+      "#text": "https://enterprise.github.com/releases/3.18.12",
+      "@isPermaLink": "true"
+    },
+    "link": "https://enterprise.github.com/releases/3.18.12",
+    "pubDate": "Thu, 16 Jul 2026 16:03:18 +0000",
+    "title": "3.18.12"
+  },
+  {
+    "description": {},
+    "guid": {
+      "#text": "https://enterprise.github.com/releases/3.17.18",
+      "@isPermaLink": "true"
+    },
+    "link": "https://enterprise.github.com/releases/3.17.18",
+    "pubDate": "Thu, 16 Jul 2026 16:03:17 +0000",
+    "title": "3.17.18"
+  },
+  {
+    "description": {},
+    "guid": {
       "#text": "https://enterprise.github.com/releases/3.21.2",
       "@isPermaLink": "true"
     },
@@ -48,55 +98,5 @@
     "link": "https://enterprise.github.com/releases/3.17.17",
     "pubDate": "Tue, 30 Jun 2026 16:03:17 +0000",
     "title": "3.17.17"
-  },
-  {
-    "description": {},
-    "guid": {
-      "#text": "https://enterprise.github.com/releases/3.16.20",
-      "@isPermaLink": "true"
-    },
-    "link": "https://enterprise.github.com/releases/3.16.20",
-    "pubDate": "Tue, 30 Jun 2026 16:03:16 +0000",
-    "title": "3.16.20"
-  },
-  {
-    "description": {},
-    "guid": {
-      "#text": "https://enterprise.github.com/releases/3.21.1",
-      "@isPermaLink": "true"
-    },
-    "link": "https://enterprise.github.com/releases/3.21.1",
-    "pubDate": "Thu, 18 Jun 2026 16:03:21 +0000",
-    "title": "3.21.1"
-  },
-  {
-    "description": {},
-    "guid": {
-      "#text": "https://enterprise.github.com/releases/3.21.0",
-      "@isPermaLink": "true"
-    },
-    "link": "https://enterprise.github.com/releases/3.21.0",
-    "pubDate": "Thu, 11 Jun 2026 16:03:21 +0000",
-    "title": "3.21.0"
-  },
-  {
-    "description": {},
-    "guid": {
-      "#text": "https://enterprise.github.com/releases/3.20.3",
-      "@isPermaLink": "true"
-    },
-    "link": "https://enterprise.github.com/releases/3.20.3",
-    "pubDate": "Tue, 26 May 2026 16:03:20 +0000",
-    "title": "3.20.3"
-  },
-  {
-    "description": {},
-    "guid": {
-      "#text": "https://enterprise.github.com/releases/3.19.7",
-      "@isPermaLink": "true"
-    },
-    "link": "https://enterprise.github.com/releases/3.19.7",
-    "pubDate": "Tue, 26 May 2026 16:03:19 +0000",
-    "title": "3.19.7"
   }
 ]
